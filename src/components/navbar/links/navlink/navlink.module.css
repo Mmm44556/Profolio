@@ -1,0 +1,17 @@
+.container {
+  min-width: 100px;
+
+}
+
+.active {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+@media (max-width:768px) {
+
+  .active {
+    background-color: var(--bg);
+    color: var(--text);
+  }
+}

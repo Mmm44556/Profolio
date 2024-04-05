@@ -1,0 +1,38 @@
+.links {
+  display: flex;
+  gap: 40px;
+}
+
+.mobileLinks {
+  display: none;
+}
+
+.menuBtn {
+  display: none;
+}
+
+@media (max-width:768px) {
+  .links {
+    display: none;
+  }
+
+  .mobileLinks {
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 45%;
+    height: calc(100dvh);
+    background-color: var(--text);
+    color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuBtn {
+    display: block;
+    position: fixed;
+    right: 0;
+  }
+}

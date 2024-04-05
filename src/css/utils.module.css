@@ -1,0 +1,18 @@
+.button {
+  padding: 0.8rem;
+  width: 6rem;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+.input {
+  outline: none;
+  border: 1px solid var(--text);
+  border-radius: 0;
+  padding: 0.8rem;
+  width: 60%;
+}
