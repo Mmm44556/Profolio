@@ -1,13 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --bg: #FFF;
   --text: #000;
-  --xs: 0;
+  /* --xs: 0;
   --sm: 576px;
   --md: 768px;
   --lg: 992px;
   --xl: 1200px;
   --xxl: 1400px;
-  --xxxl: 1536px;
+  --xxxl: 1536px; */
 }
 
 * {
@@ -27,16 +30,10 @@ a {
 }
 
 .container {
-  border: 1px solid red;
-  width: 1536px;
-  margin: auto;
-  padding: 0 50px;
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 100dvh;
+  width: 100dvw;
 }
-
+/* 
 @media (max-width: 576px) {
   .container {
     width: var(--sm);
@@ -88,4 +85,4 @@ a {
     width: var(--xxxl);
     border: 1px solid black;
   }
-}
+} */

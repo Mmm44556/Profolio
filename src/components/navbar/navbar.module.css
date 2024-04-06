@@ -1,10 +1,44 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+
+
+
+
+.mobileLinks {
+  display: none;
 }
 
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
+.menuBtn {
+  display: none;
+}
+
+@media (max-width:768px) {
+  .links {
+    display: none;
+
+  }
+
+  .mobileLinks {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 49;
+    background-color: var(--text);
+    color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .menuBtn {
+    color: var(--bg);
+    display: block;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+  }
 }

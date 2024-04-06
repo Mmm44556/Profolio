@@ -10,7 +10,7 @@ const Navlink = ({ items }) => {
   return (
     <>
       <Link href={items.path}
-        className={`${style.container} ${pathName === items.path && style.active}`}>
+        className={` ${pathName === items.path && style.active} rounded-md px-4`}>
         {items.title}
       </Link>
     </>
